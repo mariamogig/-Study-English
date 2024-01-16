@@ -21,16 +21,16 @@ dl, dd, dt {
   margin: 0;
   padding: 0;
 }
-.container {
+.background-image {
     background-image: url(images/English-Online.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;;
+    background-attachment: fixed;
     width: 100%;
-    height: 1233px;
+    height: 1033px;
     background-color: beige;
 }
-.inner-container {
+.container {
     width: 65%;
     height: 100%;
     margin: auto;
@@ -52,7 +52,7 @@ dl, dd, dt {
     margin-top: 40px;
     margin-left: 10px;
 }
-.inner-container2 {
+.section1 {
     display: flex;
     justify-content: space-between;
     margin-top: 150px
@@ -83,4 +83,76 @@ dl, dd, dt {
 }
 .form {
     
+}
+
+/*section2*/
+.section2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.section2 h3 {
+    margin-bottom: 100px;
+    font-size: 40px;
+}
+.flex-center {
+    display: flex;
+    justify-content: space-around;
+}
+.info-box {
+   max-width: 600px;
+   width: 100%;
+   background-color: lightgrey;
+}
+.info-box h2 {
+    font-size: 30px;
+    margin: 40px 0 30px 0;
+}
+.info-box p {
+    font-size: 27px;
+    margin-bottom: 40px;
+    text-align: left;
+    margin-left: 10%;
+}
+.see-more-button {
+    border-radius: 8px;
+    height: 45px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 18px;
+    background-color:darkslateblue;
+    color: white;
+    cursor: pointer;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.full-info {
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 100px;
 }
