@@ -31,7 +31,7 @@ dl, dd, dt {
     background-color: beige;
 }
 .container {
-    width: 65%;
+    width: 75%;
     height: 100%;
     margin: auto;
 }
@@ -55,10 +55,11 @@ dl, dd, dt {
 .section1 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 150px
 }
 .services {
-    width: 60%;
+    width: 850px;
 }
 .services p {
     font-size: 30px;
@@ -67,24 +68,51 @@ dl, dd, dt {
     margin-bottom: 50px;
     font-size: 40px;
 }
-.sign-up-form {
-    width: 480px;
+.contact-form-div {
+    width: 500px;
     height: 465px;
     background-color: white;
     text-align: center;
     font-size: 30px;
-    display: flex;
+    border-radius: 25px;    
+}
+.contact-form {
+    margin-top: 60px;
     justify-content: center;
-    border-radius: 25px;
     
 }
-.input-container {
-   
+.flex-column {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: black;
 }
-.form {
-    
-}
+.flex-column input {
+    max-width: 450px;
+    width: 100%;
+    height: 60px;
+    margin: 15px;
+    border-radius: 8px;
+    border: lightgray solid 1px;
 
+}
+.flex-column select {
+    max-width: 450px;
+    width: 100%;
+    height: 60px;
+    margin: 15px;
+    border: lightgray solid 1px;
+    border-radius: 8px;
+}
+.submit-button {
+    width: 150px;
+    height: 50px;
+    font-size: 22px;
+    border: none;
+    background-color: #0020C2;
+    color: white;
+    border-radius: 8px;
+}
 /*section2*/
 .section2 {
     text-align: center;
@@ -98,11 +126,14 @@ dl, dd, dt {
 .flex-center {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .info-box {
    max-width: 600px;
    width: 100%;
-   background-color: lightgrey;
+   background-color: #F5F5F5;
+   border-radius: 19px;
+   margin-top: 20px;
 }
 .info-box h2 {
     font-size: 30px;
@@ -120,7 +151,7 @@ dl, dd, dt {
     margin-bottom: 20px;
     border: none;
     font-size: 18px;
-    background-color:darkslateblue;
+    background-color:#0020C2;
     color: white;
     cursor: pointer;
 }
