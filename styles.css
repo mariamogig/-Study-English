@@ -21,13 +21,61 @@ dl, dd, dt {
   margin: 0;
   padding: 0;
 }
+.navigation-header {
+    position: fixed;
+  background-color: rgb(73, 51, 153);
+  padding: 0 15px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+nav {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container {
+    display: flex;
+    color: ghostwhite;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+}
+.navigation-items {
+    display: flex;
+    gap: 40px;
+}
+.navigation-items > a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: .4s ease-in-out;
+  }
+  .navigation-items > a:hover {
+    color: white;
+  }
+  .hamburger {
+    display: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+  }
+  .logo-title {
+    color: white;
+    font-size: 20px;
+  }
 .background-image {
     background-image: url(images/English-Online.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 1033px;
+    height: 600px;
     background-color: beige;
 }
 .container {
@@ -35,49 +83,36 @@ dl, dd, dt {
     height: 100%;
     margin: auto;
 }
-.logo-container {
-    display: flex;
-    padding-top: 60px;
-    
-}
 .logo {
-    width: 50px;
-    height: 50px;
-    margin-top: 40px;
-}
-.logo-title {
-    width: 396px;
-    height: 88px;
-    font-size: 40px;
-    margin-top: 40px;
-    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 .section1 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 150px
 }
 .services {
-    width: 850px;
+    width: 550px;
 }
 .services p {
-    font-size: 30px;
+    font-size: 18px;
 }
 .services h1 {
     margin-bottom: 50px;
-    font-size: 40px;
+    font-size: 20px;
 }
 .contact-form-div {
-    width: 500px;
-    height: 465px;
+    width: 350px;
+    height: 300px;
     background-color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 17px;
     border-radius: 25px;    
 }
 .contact-form {
-    margin-top: 60px;
+    margin-top: 40px;
     justify-content: center;
     
 }
@@ -88,26 +123,26 @@ dl, dd, dt {
    color: black;
 }
 .flex-column input {
-    max-width: 450px;
+    max-width: 250px;
     width: 100%;
-    height: 60px;
+    height: 40px;
     margin: 15px;
     border-radius: 8px;
     border: lightgray solid 1px;
 
 }
 .flex-column select {
-    max-width: 450px;
+    max-width: 250px;
     width: 100%;
-    height: 60px;
+    height: 40px;
     margin: 15px;
     border: lightgray solid 1px;
     border-radius: 8px;
 }
 .submit-button {
-    width: 150px;
-    height: 50px;
-    font-size: 22px;
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
     border: none;
     background-color: #0020C2;
     color: white;
@@ -116,12 +151,11 @@ dl, dd, dt {
 /*section2*/
 .section2 {
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
 }
 .section2 h3 {
-    margin-bottom: 100px;
-    font-size: 40px;
+    margin-bottom: 50px;
+    font-size: 23px;
 }
 .flex-center {
     display: flex;
@@ -133,14 +167,14 @@ dl, dd, dt {
    width: 100%;
    background-color: #F5F5F5;
    border-radius: 19px;
-   margin-top: 20px;
+   margin-top: 10px;
 }
 .info-box h2 {
-    font-size: 30px;
+    font-size: 18px;
     margin: 40px 0 30px 0;
 }
 .info-box p {
-    font-size: 27px;
+    font-size: 17px;
     margin-bottom: 40px;
     text-align: left;
     margin-left: 10%;
@@ -150,7 +184,7 @@ dl, dd, dt {
     height: 45px;
     margin-bottom: 20px;
     border: none;
-    font-size: 18px;
+    font-size: 10px;
     background-color:#0020C2;
     color: white;
     cursor: pointer;
@@ -186,4 +220,27 @@ dl, dd, dt {
     text-align: center;
     margin-top: 50px;
     margin-right: 100px;
+}
+
+@media screen and (max-width:768px) { 
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+      }
+      .hamburger #closeHam {
+        display: none;
+      }
+    .navigation-items {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 58px;
+        background-color: rgb(73, 51, 153);
+        width: 100%;
+        height: calc(100vh - 58px);
+        padding-top: 60px;
+        gap: 10vh;
+    }
 }
