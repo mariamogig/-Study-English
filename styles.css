@@ -22,14 +22,12 @@ dl, dd, dt {
   padding: 0;
 }
 .navigation-header {
-    position: fixed;
   background-color: rgb(73, 51, 153);
   padding: 0 15px;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 nav {
     max-width: 1200px;

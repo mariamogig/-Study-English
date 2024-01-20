@@ -47,3 +47,28 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 });
+
+const openHam = document.querySelector("#openHam");
+const closeHam = document.querySelector("#closeHam");
+const navigationItems = document.querySelector("#navigation-items");
+
+const hamburgerEvent = () => {
+    if (window.innerWidth <= 768) {
+        navigationItems.style.display = navigationItems.style.display === "none" ? "flex" : "none";
+        closeHam.style.display = navigationItems.style.display === "none" ? "none" : "block";
+        openHam.style.display = navigationItems.style.display === "none" ? "block" : "none";
+    } else {
+        navigationItems.style.display = "flex";
+        closeHam.style.display = "none";
+        openHam.style.display = "none";
+    }
+};
+
+openHam.addEventListener('click', hamburgerEvent);
+closeHam.addEventListener('click', hamburgerEvent);
+
+// Update the navigation visibility on window resize
+window.addEventListener('resize', hamburgerEvent);
+
+// Initial check on page load
+window.addEventListener('DOMContentLoaded', hamburgerEvent);
