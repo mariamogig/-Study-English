@@ -2,10 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/2475799efc.js" crossorigin="anonymous"></script>
         <title>ლინგო ჰაბი</title>
-    </head>
+        <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
+
+        </head>
     <header class="navigation-header">
         <nav>
             <div class="logo-container">
@@ -14,8 +17,8 @@
             </div>
             <div class="navigation-items" id="navigation-items">
                 <a href="#">About Us</a>
-                <a href="#">Programs</a>
-                <a href="#">Contact Us</a>
+                <a href="#section2">Programs</a>
+                <a href="#footer">Contact Us</a>
             </div>
             <div class="hamburger">
                 <span id="openHam">&#9776;</span>
@@ -26,15 +29,14 @@
     <body>
         <div class="background-image">
             <div class="container">
-                <div class="section1">
                     <div class="services">
                         <h1>გსურს ინგლისურის შესწავლა ონლაინ?</h1>
                         <p>თქვენს მიზანზე მორგებული პროგრამა
                         </p>
                         <p>💜 -20% ფასდაკლება ერთდროულად ორი ან მეტი რეგისტრაციის შემთხვევაში</p>
-                        <p>💻გაკვეთილები ტარდება როგორც ინდინდივიდუალურად, ასევე ჯგუფში</p>
                     </div>
-                    <div class="contact-form-div">
+                   <a href="https://www.google.com/forms/about/"><button class="submit-button">რეგისტრაცია</button></a> 
+                  <!--<div class="contact-form-div">
                         <form action="" class="contact-form">
                             <div class="flex-column">
                                 <label for="email">ელ ფოსტა</label>
@@ -51,13 +53,12 @@
                             </div>
                                 <button class="submit-button">გაგზავნა</button>
                         </form>
-                    </div>
-                </div>
+                    </div>-->
             </div>
         </div>
-        <div class="section2">
+        <div id="section2" class="section2">
             <h3>ჩვენი კურსების შესახებ</h3>
-            <div class="flex-center">
+            <div class="info-box-container">
                 <div class="info-box">
                     <h2>ბიზნეს ინგლისური</h2>
                     <p>ბიზნეს ინგლისურის გაკვეთილები ინდივიდუალური პროგრამით.<br>
@@ -72,7 +73,7 @@
                             8 გაკვეთილის ღირებულება შეადგენს 160 ლარს..</p>
                         </div>
                     </div>
-             </div>
+                 </div>
                 <div class="info-box">
                     <h2>საკომუნიკაციო ინგლისური</h2>
                     <p>ბიზნეს ინგლისურის გაკვეთილები ინდივიდუალური პროგრამით.<br>
@@ -105,6 +106,12 @@
                 </div>
             </div>
         </div>
+        <footer id="footer">
+            <div class="footer-container"> 
+                <a href="https://www.facebook.com/TheLingoHubGE"><i class="fab fa-facebook-square"></i></a> 
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i>   </a>  
+                <span>Lingohub@mail.com</span>
+        </footer>
         <script src="script.js"></script>
     </body>
 </html>
