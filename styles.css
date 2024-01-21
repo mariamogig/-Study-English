@@ -1,7 +1,7 @@
 
-@import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css");
+/*@import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css");
 @import url("//cdn.web-fonts.ge/fonts/bpg-banner-caps/css/bpg-banner-caps.min.css");
-@import url("//cdn.web-fonts.ge/fonts/arial-geo/css/arial-geo.min.css");
+@import url("//cdn.web-fonts.ge/fonts/arial-geo/css/arial-geo.min.css");*/
 
 * {
   box-sizing: border-box;
@@ -29,8 +29,12 @@ dl, dd, dt {
 body {
     padding-top: 55px;
 }
+.main-container {
+    margin: auto;
+    max-width: 900px;
+}
 .navigation-header {
-  font-family: "BPG Banner Caps", sans-serif;
+  font-family: "BPG Banner", sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -55,7 +59,7 @@ nav {
 }
 .navigation-items {
     display: flex;
-    gap: 40px;
+    gap: 20px;
 }
 .navigation-items > a {
     color: ghostwhite;
@@ -113,9 +117,10 @@ nav {
     font-size: 18px;
 }
 .services h1 {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-size: 25px;
     font-weight: 600;
+    font-family: "BPG Banner", sans-serif;
 }
 /*
 .contact-form-div {
@@ -164,7 +169,7 @@ nav {
     border-radius: 8px;
     margin-top: 50px;
     cursor: pointer;
-    font-family: "BPG Banner Caps", sans-serif;
+    font-family: "BPG Banner", sans-serif;
 }
 /*section2*/
 .section2 {
@@ -172,13 +177,14 @@ nav {
     margin-top: 30px;
 }
 .section2 h3 {
+    font-family: "BPG Banner", sans-serif;
     margin-bottom: 30px;
     font-size: 23px;
-    font-weight:600;
+    font-weight:400;
 }
 .info-box-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .info-box {
@@ -186,11 +192,12 @@ nav {
    width: 100%;
    background-color: #F5F5F5;
    border-radius: 19px;
-   margin-top: 10px;
+   margin-top: 30px;
 }
 .info-box h2 {
     font-size: 18px;
     margin: 40px 0 30px 0;
+    font-family: "BPG Banner", sans-serif;
 }
 .info-box p {
     font-size: 17px;
@@ -207,7 +214,7 @@ nav {
     background-color:#051650;
     color: white;
     cursor: pointer;
-    font-family: "BPG Banner Caps", sans-serif;
+    font-family: "BPG Banner", sans-serif;
     font-weight: 600;
 }
 .popup {
@@ -248,13 +255,15 @@ nav {
     align-items: center;
 }
 .section3-content {
-    max-width: 600px;
-    margin: 30px 0 30px 0;
+    max-width: 800px;
+    width: 100%;
+    margin: 60px 0 50px 0;
     text-align: center;
 }
 .section3-content h4 {
     margin-bottom: 20px;
     font-weight: 900;
+    font-family: "BPG Banner", sans-serif;
 }
 .footer-container {
     height: 60px;
@@ -266,14 +275,14 @@ nav {
     align-items: center;
     font-size: 20px;
 }
-.fa-linkedin {
+.footer-linkedin-icon{
     color: white;
     margin: 0 15px 0 10px;
-    font-size: 30px;
+    font-size: 25px;
 }
-.fa-facebook-square {
+.footer-fb-icon {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
 }
 @media screen and (max-width:768px) { 
     .hamburger {
