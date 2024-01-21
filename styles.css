@@ -1,5 +1,7 @@
 
 @import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-banner-caps/css/bpg-banner-caps.min.css");
+@import url("//cdn.web-fonts.ge/fonts/arial-geo/css/arial-geo.min.css");
 
 * {
   box-sizing: border-box;
@@ -19,7 +21,7 @@ figure,
 figcaption,
 blockquote,
 dl, dd, dt {
-  font-family: "BPG Nino Mtavruli", sans-serif;
+  font-family: "Arial GEO", sans-serif;
   font-weight: 500;
   margin: 0;
   padding: 0;
@@ -28,15 +30,15 @@ body {
     padding-top: 55px;
 }
 .navigation-header {
+  font-family: "BPG Banner Caps", sans-serif;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #051650;
-  padding: 10px 15px; /* Add some padding to make it look better */
-  z-index: 1000; /* Set a high z-index to ensure it's above other elements */
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
-}
+  padding: 10px 15px; 
+  z-index: 1000; 
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); }
 nav {
     max-width: 1200px;
     width: 100%;
@@ -48,7 +50,7 @@ nav {
     display: flex;
     color: ghostwhite;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 26px;
 }
 .navigation-items {
@@ -113,6 +115,7 @@ nav {
 .services h1 {
     margin-bottom: 30px;
     font-size: 25px;
+    font-weight: 600;
 }
 /*
 .contact-form-div {
@@ -161,6 +164,7 @@ nav {
     border-radius: 8px;
     margin-top: 50px;
     cursor: pointer;
+    font-family: "BPG Banner Caps", sans-serif;
 }
 /*section2*/
 .section2 {
@@ -170,6 +174,7 @@ nav {
 .section2 h3 {
     margin-bottom: 30px;
     font-size: 23px;
+    font-weight:600;
 }
 .info-box-container {
     display: flex;
@@ -202,6 +207,8 @@ nav {
     background-color:#051650;
     color: white;
     cursor: pointer;
+    font-family: "BPG Banner Caps", sans-serif;
+    font-weight: 600;
 }
 .popup {
     display: none;
@@ -295,5 +302,10 @@ nav {
     .info-box-container {
         display: flex;
         justify-content: center;
+    }
+    .section3-content {
+        max-width: 400px;
+        margin: 30px 0 30px 0;
+        text-align: center;
     }
 }
