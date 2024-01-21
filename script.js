@@ -55,7 +55,8 @@ const navigationItems = document.querySelector("#navigation-items");
 const hamburgerEvent = () => {
     if (window.innerWidth <= 768) {
         navigationItems.style.display = navigationItems.style.display === "none" ? "flex" : "none";
-        c
+        closeHam.style.display = navigationItems.style.display === "none" ? "none" : "block";
+        openHam.style.display = navigationItems.style.display === "none" ? "block" : "none";
     } else {
         navigationItems.style.display = "flex";
         closeHam.style.display = "none";
