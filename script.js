@@ -38,6 +38,18 @@ document.addEventListener("DOMContentLoaded", function() {
         togglePopup(popup3);
     });
 
+     // Popup 4
+     const openPopupButton4 = document.getElementById("openPopupButton4");
+     const closePopup4 = document.getElementById("closePopup4");
+     const popup4 = document.getElementById("popup4");
+ 
+     openPopupButton4.addEventListener("click", function() {
+         togglePopup(popup4);
+     });
+ 
+     closePopup4.addEventListener("click", function() {
+         togglePopup(popup4);
+     });
     // Reusable function to toggle popup display
     function togglePopup(popup) {
         if (popup.style.display === "block") {
