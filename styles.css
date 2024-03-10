@@ -33,6 +33,7 @@ body {
     margin: auto;
     max-width: 1100px;
 }
+
 .navigation-header {
   font-family: "BPG Banner", sans-serif;
   position: fixed;
@@ -48,6 +49,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
+
 }
 .logo-container {
     display: flex;
@@ -195,6 +198,7 @@ nav {
    border-radius: 10px;
    margin: 30px 5px 0 5px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
 }
 .info-box h2 {
     font-size: 20px;
@@ -243,7 +247,6 @@ nav {
     cursor: pointer;
 }
 .full-info {
-    text-align: center;
     margin-top: 40px;
 }
 .section3 {
@@ -263,7 +266,7 @@ nav {
     font-family: "BPG Banner", sans-serif;
 }
 .footer-container {
-    height: 60px;
+    height: 200px;
     width: 100% ;
     background-color: #051650;
     color: white;
