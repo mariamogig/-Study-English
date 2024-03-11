@@ -1,56 +1,29 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Popup 1
-    const openPopupButton = document.getElementById("openPopupButton");
-    const closePopup = document.getElementById("closePopup");
-    const popup = document.getElementById("popup");
+document.addEventListener("DOMContentLoaded", function () {
+    // Define an array of popup data
+    const popups = [
+        { openButtonId: "openPopupButton", closeButtonId: "closePopup", popupId: "popup" },
+        { openButtonId: "openPopupButton2", closeButtonId: "closePopup2", popupId: "popup2" },
+        { openButtonId: "openPopupButton3", closeButtonId: "closePopup3", popupId: "popup3" },
+        { openButtonId: "openPopupButton4", closeButtonId: "closePopup4", popupId: "popup4" }
+        // Add more popups as needed
+    ];
 
-    openPopupButton.addEventListener("click", function() {
-        togglePopup(popup);
+    // Iterate through each popup data and set up event listeners
+    popups.forEach(function (popupData) {
+        const openPopupButton = document.getElementById(popupData.openButtonId);
+        const closePopup = document.getElementById(popupData.closeButtonId);
+        const popup = document.getElementById(popupData.popupId);
+
+        openPopupButton.addEventListener("click", function () {
+            togglePopup(popup);
+        });
+
+        closePopup.addEventListener("click", function () {
+            togglePopup(popup);
+        });
     });
 
-    closePopup.addEventListener("click", function() {
-        togglePopup(popup);
-    });
-
-    // Popup 2
-    const openPopupButton2 = document.getElementById("openPopupButton2");
-    const closePopup2 = document.getElementById("closePopup2");
-    const popup2 = document.getElementById("popup2");
-
-    openPopupButton2.addEventListener("click", function() {
-        togglePopup(popup2);
-    });
-
-    closePopup2.addEventListener("click", function() {
-        togglePopup(popup2);
-    });
-
-    // Popup 3
-    const openPopupButton3 = document.getElementById("openPopupButton3");
-    const closePopup3 = document.getElementById("closePopup3");
-    const popup3 = document.getElementById("popup3");
-
-    openPopupButton3.addEventListener("click", function() {
-        togglePopup(popup3);
-    });
-
-    closePopup3.addEventListener("click", function() {
-        togglePopup(popup3);
-    });
-
-     // Popup 4
-     const openPopupButton4 = document.getElementById("openPopupButton4");
-     const closePopup4 = document.getElementById("closePopup4");
-     const popup4 = document.getElementById("popup4");
- 
-     openPopupButton4.addEventListener("click", function() {
-         togglePopup(popup4);
-     });
- 
-     closePopup4.addEventListener("click", function() {
-         togglePopup(popup4);
-     });
-    // Reusable function to toggle popup display
+    // Function to toggle popup visibility
     function togglePopup(popup) {
         if (popup.style.display === "block") {
             popup.style.display = "none";
@@ -59,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 });
+
 
 const openHam = document.querySelector("#openHam");
 const closeHam = document.querySelector("#closeHam");
