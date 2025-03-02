@@ -74,12 +74,12 @@ nav {
   .navigation-items > a:hover {
     color: white;
   }
-  .hamburger {
+  /*.hamburger {
     display: none;
     font-size: 20px;
     font-weight: 800;
     color: white;
-  }
+  }*/
   .logo-title {
     color: white;
     font-size: 30px;
@@ -328,25 +328,15 @@ nav {
 }
 
 @media screen and (max-width:768px) { 
-    .hamburger {
+    /*.hamburger {
         display: flex;
         cursor: pointer;
       }
       .hamburger #closeHam {
         display: none;
-      }
+      }*/
     .navigation-items {
         display: none;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        right: 0;
-        top: 58px;
-        background-color: rgb(73, 51, 153);
-        width: 100%;
-        height: calc(100vh - 58px);
-        padding-top: 60px;
-        gap: 10vh;
     }
     .section1 {
         justify-content: center;

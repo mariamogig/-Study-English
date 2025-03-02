@@ -38,7 +38,7 @@ const openHam = document.querySelector("#openHam");
 const closeHam = document.querySelector("#closeHam");
 const navigationItems = document.querySelector("#navigation-items");
 
-const hamburgerEvent = () => {
+/*const hamburgerEvent = () => {
     if (window.innerWidth <= 768) {
         navigationItems.style.display = navigationItems.style.display === "none" ? "flex" : "none";
         closeHam.style.display = navigationItems.style.display === "none" ? "none" : "block";
@@ -57,4 +57,4 @@ closeHam.addEventListener('click', hamburgerEvent);
 window.addEventListener('resize', hamburgerEvent);
 
 // Initial check on page load
-window.addEventListener('DOMContentLoaded', hamburgerEvent);
+window.addEventListener('DOMContentLoaded', hamburgerEvent);*/
